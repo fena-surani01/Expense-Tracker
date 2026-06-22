@@ -1,0 +1,9 @@
+.color{
+    background-color: brown;
+    color: antiquewhite;
+}
+
+.noncolor{
+    background-color:antiquewhite;
+    color:  brown;
+}

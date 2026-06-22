@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:700px;
+    max-width:90%;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:55px;
+    color:#222;
+    white-space:nowrap;
+}
+
+/* Form */
+
+.expense-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+.expense-form input{
+    width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+.expense-form input:focus{
+    border-color:#22c55e;
+    box-shadow:0 0 8px rgba(34,197,94,.3);
+}
+
+.expense-form button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+
+    background:#22c55e;
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.expense-form button:hover{
+    background:#16a34a;
+}
+
+/* Total */
+
+.total{
+    background:#edf9f0;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.total h2{
+    color:#15803d;
+}
+
+/* Expense List */
+
+.expense-list{
+    list-style:none;
+}
+
+.expense-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 20px;
+    margin-bottom:20px;
+
+    border-left:5px solid #22c55e;
+    border-radius:15px;
+    background:#fafafa;
+}
+
+.expense-name{
+    font-size:20px;
+    color:#333;
+}
+
+.amount{
+    font-size:20px;
+    font-weight:600;
+    color:#444;
+}
+
+.delete-btn{
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#ff3b3b;
+    color:white;
+
+    font-size:22px;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+    transform:scale(1.1);
+}
+
+/* Expense List Container */
+.expense-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each Expense Card */
+.expense-item{
+    background: #fafafa;
+    padding: 20px 25px;
+    border-radius: 15px;
+    border-left: 5px solid #22c55e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: .3s;
+}
+
+.expense-item:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    transform: translateY(-2px);
+}
+
+/* Expense Name */
+.expense-name{
+    flex: 1;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Amount */
+.amount{
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    margin-right: 30px;
+}
+
+/* Delete Button */
+.delete-btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #ff3b30;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.delete-btn:hover{
+    background: #dc2626;
+    transform: scale(1.1);
+}
+
+.no-expense{
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    margin-right: 30px;
+    text-align: center;
+}

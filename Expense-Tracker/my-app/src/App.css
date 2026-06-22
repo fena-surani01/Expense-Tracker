@@ -207,3 +207,93 @@ h1{
     margin-right: 30px;
     text-align: center;
 }
+
+/* ===============================
+   Tablet (768px and below)
+================================== */
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 95%;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .expense-name,
+    .amount{
+        font-size: 18px;
+    }
+}
+
+
+/* ===============================
+   Mobile (480px and below)
+================================== */
+@media screen and (max-width: 480px){
+
+    body{
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .container{
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .expense-form input{
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .expense-form button{
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .total{
+        padding: 15px;
+    }
+
+    .total h2{
+        font-size: 22px;
+    }
+
+    /* Stack expense card contents */
+    .expense-item{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .expense-name{
+        font-size: 18px;
+    }
+
+    .amount{
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .delete-btn{
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .no-expense{
+        font-size: 18px;
+        margin-right: 0;
+    }
+}
